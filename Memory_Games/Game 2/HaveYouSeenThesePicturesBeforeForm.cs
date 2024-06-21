@@ -16,6 +16,7 @@ namespace Memory_Games
         public HaveYouSeenThesePicturesBefore Game { get; private set; } = new HaveYouSeenThesePicturesBefore();
         private int _index;
         private DateTime _gameStart;
+        private int _remainingTime;
         public HaveYouSeenThesePicturesBeforeForm()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace Memory_Games
             buttonYes.Visible = false;
             buttonNo.Visible = false;
             labelInstruction.Visible = false;
+            panelCountdown.Visible = false;
         }
 
         private void GoBackToGameSelection_Click(object sender, EventArgs e)
@@ -54,9 +56,14 @@ namespace Memory_Games
             {
                 panelAllCards.Controls[i].BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfWordsToShowToPlayer[i]) as Bitmap;
             }
-
+            _remainingTime = 30;
+            labelRemainingTime.Text = $"{_remainingTime.ToString()} s";
+            panelCountdown.Visible = true;
+            timer.Enabled = true;
             await Task.Delay(30000);
 
+            timer.Enabled = false;
+            panelCountdown.Visible = false;
             panelAllCards.Visible = false;
             pictureBoxPicturesToGuess.Visible = true;
             buttonYes.Visible = true;
@@ -126,6 +133,12 @@ namespace Memory_Games
         {
             TopScoresForm topScores = new TopScoresForm(Game.GameName);
             topScores.Show();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            _remainingTime--;
+            labelRemainingTime.Text = $"{ _remainingTime.ToString()} s";
         }
     }
 }

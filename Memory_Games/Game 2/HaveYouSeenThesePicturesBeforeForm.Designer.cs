@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HaveYouSeenThesePicturesBeforeForm));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -69,6 +70,10 @@
             gameDescription = new RichTextBox();
             labelAttribution = new Label();
             labelInstruction = new Label();
+            timer = new System.Windows.Forms.Timer(components);
+            labelRemainingTime = new Label();
+            label1 = new Label();
+            panelCountdown = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -101,6 +106,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox25).BeginInit();
             panelAllCards.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxPicturesToGuess).BeginInit();
+            panelCountdown.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
@@ -537,11 +543,47 @@
             labelInstruction.TabIndex = 37;
             labelInstruction.Text = "Have you seen this picture before?";
             // 
+            // timer
+            // 
+            timer.Interval = 1000;
+            timer.Tick += timer_Tick;
+            // 
+            // labelRemainingTime
+            // 
+            labelRemainingTime.AutoSize = true;
+            labelRemainingTime.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            labelRemainingTime.Location = new Point(143, 10);
+            labelRemainingTime.Name = "labelRemainingTime";
+            labelRemainingTime.Size = new Size(38, 18);
+            labelRemainingTime.TabIndex = 38;
+            labelRemainingTime.Text = "30 s";
+            labelRemainingTime.TextAlign = ContentAlignment.TopRight;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            label1.Location = new Point(16, 10);
+            label1.Name = "label1";
+            label1.Size = new Size(121, 18);
+            label1.TabIndex = 39;
+            label1.Text = "Remaining time:";
+            // 
+            // panelCountdown
+            // 
+            panelCountdown.Controls.Add(label1);
+            panelCountdown.Controls.Add(labelRemainingTime);
+            panelCountdown.Location = new Point(320, 24);
+            panelCountdown.Name = "panelCountdown";
+            panelCountdown.Size = new Size(195, 39);
+            panelCountdown.TabIndex = 40;
+            // 
             // HaveYouSeenThesePicturesBeforeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(839, 806);
+            Controls.Add(panelCountdown);
             Controls.Add(labelAttribution);
             Controls.Add(buttonYes);
             Controls.Add(buttonNo);
@@ -587,6 +629,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox25).EndInit();
             panelAllCards.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBoxPicturesToGuess).EndInit();
+            panelCountdown.ResumeLayout(false);
+            panelCountdown.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -633,5 +677,9 @@
         private RichTextBox gameDescription;
         private Label labelAttribution;
         private Label labelInstruction;
+        private System.Windows.Forms.Timer timer;
+        private Label labelRemainingTime;
+        private Label label1;
+        private Panel panelCountdown;
     }
 }
