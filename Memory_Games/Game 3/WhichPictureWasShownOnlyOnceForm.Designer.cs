@@ -52,6 +52,7 @@
             labelPictureNumber = new Label();
             gameDescription = new RichTextBox();
             labelAttribution = new Label();
+            labelInstruction = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -75,7 +76,7 @@
             // buttonTopScores
             // 
             buttonTopScores.Font = new Font("Arial", 10F);
-            buttonTopScores.Location = new Point(444, 31);
+            buttonTopScores.Location = new Point(444, 20);
             buttonTopScores.Name = "buttonTopScores";
             buttonTopScores.Size = new Size(119, 46);
             buttonTopScores.TabIndex = 35;
@@ -86,7 +87,7 @@
             // buttonBackToGameSelection
             // 
             buttonBackToGameSelection.Font = new Font("Arial", 10F);
-            buttonBackToGameSelection.Location = new Point(27, 31);
+            buttonBackToGameSelection.Location = new Point(28, 20);
             buttonBackToGameSelection.Name = "buttonBackToGameSelection";
             buttonBackToGameSelection.Size = new Size(119, 46);
             buttonBackToGameSelection.TabIndex = 34;
@@ -340,17 +341,28 @@
             // 
             labelAttribution.AutoSize = true;
             labelAttribution.Font = new Font("Segoe UI", 11.25F, FontStyle.Italic, GraphicsUnit.Point, 238);
-            labelAttribution.Location = new Point(393, 652);
+            labelAttribution.Location = new Point(393, 663);
             labelAttribution.Name = "labelAttribution";
             labelAttribution.Size = new Size(189, 20);
             labelAttribution.TabIndex = 54;
             labelAttribution.Text = "Images by flatart on Freepik.";
             // 
+            // labelInstruction
+            // 
+            labelInstruction.AutoSize = true;
+            labelInstruction.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            labelInstruction.Location = new Point(136, 80);
+            labelInstruction.Name = "labelInstruction";
+            labelInstruction.Size = new Size(322, 18);
+            labelInstruction.TabIndex = 55;
+            labelInstruction.Text = "Click on the picture that was only shown once.";
+            // 
             // WhichPictureWasShownOnlyOnceForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(594, 681);
+            ClientSize = new Size(594, 692);
+            Controls.Add(labelInstruction);
             Controls.Add(labelAttribution);
             Controls.Add(gameDescription);
             Controls.Add(pictureBoxShowingImages);
@@ -410,5 +422,6 @@
         private Label labelPictureNumber;
         private RichTextBox gameDescription;
         private Label labelAttribution;
+        private Label labelInstruction;
     }
 }

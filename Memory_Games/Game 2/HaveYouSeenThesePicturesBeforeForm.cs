@@ -23,6 +23,7 @@ namespace Memory_Games
             pictureBoxPicturesToGuess.Visible = false;
             buttonYes.Visible = false;
             buttonNo.Visible = false;
+            labelInstruction.Visible = false;
         }
 
         private void GoBackToGameSelection_Click(object sender, EventArgs e)
@@ -33,6 +34,7 @@ namespace Memory_Games
         private async void StartNewGame(object sender, EventArgs e)
         {
             gameDescription.Visible = false;
+            labelInstruction.Visible = false;
             buttonStartNewGame.Location = new Point(162, 24);
 
             foreach (PictureBox p in panelAllCards.Controls)
@@ -61,6 +63,7 @@ namespace Memory_Games
             buttonNo.Visible = true;
             buttonNo.Enabled = true;
             buttonYes.Enabled = true;
+            labelInstruction.Visible = true;
 
             if (Resources.ResourceManager.GetObject(Game.GameSolution[_index]) is Bitmap)
             {

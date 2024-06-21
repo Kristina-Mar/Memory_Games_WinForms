@@ -57,6 +57,7 @@
             panelAnswers = new Panel();
             gameDescription = new RichTextBox();
             labelAttribution = new Label();
+            labelInstruction = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAnswer1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxOption1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxOption2).BeginInit();
@@ -442,12 +443,23 @@
             labelAttribution.TabIndex = 30;
             labelAttribution.Text = "Images by flatart on Freepik.";
             // 
+            // labelInstruction
+            // 
+            labelInstruction.AutoSize = true;
+            labelInstruction.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            labelInstruction.Location = new Point(12, 139);
+            labelInstruction.Name = "labelInstruction";
+            labelInstruction.Size = new Size(359, 18);
+            labelInstruction.TabIndex = 31;
+            labelInstruction.Text = "Drag and drop the pictures to their correct position:";
+            // 
             // PicturesInCorrectOrderForm
             // 
             AllowDrop = true;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1111, 618);
+            Controls.Add(labelInstruction);
             Controls.Add(labelAttribution);
             Controls.Add(gameDescription);
             Controls.Add(buttonStartNewGame);
@@ -518,5 +530,6 @@
         private Panel panelAnswers;
         private RichTextBox gameDescription;
         private Label labelAttribution;
+        private Label labelInstruction;
     }
 }

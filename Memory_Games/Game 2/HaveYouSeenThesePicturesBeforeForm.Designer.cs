@@ -68,6 +68,7 @@
             buttonNo = new Button();
             gameDescription = new RichTextBox();
             labelAttribution = new Label();
+            labelInstruction = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -526,6 +527,16 @@
             labelAttribution.TabIndex = 36;
             labelAttribution.Text = "Images by flatart on Freepik.";
             // 
+            // labelInstruction
+            // 
+            labelInstruction.AutoSize = true;
+            labelInstruction.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            labelInstruction.Location = new Point(296, 130);
+            labelInstruction.Name = "labelInstruction";
+            labelInstruction.Size = new Size(247, 18);
+            labelInstruction.TabIndex = 37;
+            labelInstruction.Text = "Have you seen this picture before?";
+            // 
             // HaveYouSeenThesePicturesBeforeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -538,6 +549,7 @@
             Controls.Add(buttonBackToGameSelection);
             Controls.Add(gameDescription);
             Controls.Add(buttonStartNewGame);
+            Controls.Add(labelInstruction);
             Controls.Add(pictureBoxPicturesToGuess);
             Controls.Add(panelAllCards);
             Name = "HaveYouSeenThesePicturesBeforeForm";
@@ -620,5 +632,6 @@
         private Button buttonNo;
         private RichTextBox gameDescription;
         private Label labelAttribution;
+        private Label labelInstruction;
     }
 }

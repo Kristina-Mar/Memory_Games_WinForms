@@ -21,6 +21,7 @@ namespace Memory_Games
             panelOptions.Visible = false;
             pictureBoxShowingImages.Visible = false;
             labelPictureNumber.Visible = false;
+            labelInstruction.Visible = false;
         }
 
         private void GoBackToGameSelection(object sender, EventArgs e)
@@ -31,10 +32,11 @@ namespace Memory_Games
         private async void StartNewGame(object sender, EventArgs e)
         {
             gameDescription.Visible = false;
-            buttonStartNewGame.Location = new Point(155, 31);
+            buttonStartNewGame.Location = new Point(155, 20);
             panelOptions.Visible = false;
             pictureBoxShowingImages.Visible = true;
             labelPictureNumber.Visible = true;
+            labelInstruction.Visible = false;
 
             Game = new WhichPictureWasShownOnlyOnce();
             Game.SetUpGame();
@@ -63,6 +65,7 @@ namespace Memory_Games
                     panelOptions.Controls[i].Tag = uniqueValues[i];
                 }
             }
+            labelInstruction.Visible = true;
             _gameStart = DateTime.Now;
         }
 

@@ -42,6 +42,7 @@ namespace Memory_Games
             panelOptions.Visible = false;
             buttonSubmitAnswers.Visible = false;
             pictureBoxShowingImages.Visible = false;
+            labelInstruction.Visible = false;
         }
 
         private void GoBackToGameSelection(object sender, EventArgs e)
@@ -57,6 +58,7 @@ namespace Memory_Games
             pictureBoxShowingImages.Visible = true;
             buttonStartNewGame.Location = new Point(137, 45);
             gameDescription.Visible = false;
+            labelInstruction.Visible = false;
 
             foreach (PictureBox p in panelAnswers.Controls)
             {
@@ -87,6 +89,7 @@ namespace Memory_Games
                 pictureBoxOptions[i].Tag = orderedList.ElementAt(i);
             }
             buttonSubmitAnswers.Visible = true;
+            labelInstruction.Visible = true;
             _gameStart = DateTime.Now;
         }
 
