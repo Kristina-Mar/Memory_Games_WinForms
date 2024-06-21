@@ -7,22 +7,6 @@
       "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\game 3\\whichpicturewasshownonlyonceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\game 3\\whichpicturewasshownonlyonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\game 3\\whichpicturewasshownonlyonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\game 2\\haveyouseenthesepicturesbefore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\game 2\\haveyouseenthesepicturesbefore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\game 1\\picturesincorrectorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\game 1\\picturesincorrectorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\baseclassforallgames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\baseclassforallgames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\game 2\\haveyouseenthesepicturesbeforeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\game 2\\haveyouseenthesepicturesbeforeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,15 +15,31 @@
       "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\game 1\\picturesincorrectorderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\game 1\\picturesincorrectorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\game 1\\picturesincorrectorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\scores\\playerscores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\scores\\playerscores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\game 3\\whichpicturewasshownonlyonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\game 3\\whichpicturewasshownonlyonce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\game 2\\haveyouseenthesepicturesbefore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\game 2\\haveyouseenthesepicturesbefore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\baseclassforallgames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\baseclassforallgames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\scores\\topscoresform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\scores\\topscoresform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|c:\\users\\kika\\documents\\c# 2\\memory_games_winforms\\memory_games\\scores\\topscoresform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\memory_games\\scores\\topscoresform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6084BB40-BA78-4303-ADD1-940BBB82F5DD}|Memory_Games\\Memory_Games.csproj|solutionrelative:memory_games\\scores\\topscoresform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -79,40 +79,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WhichPictureWasShownOnlyOnce.cs",
-              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 3\\WhichPictureWasShownOnlyOnce.cs",
-              "RelativeDocumentMoniker": "Memory_Games\\Game 3\\WhichPictureWasShownOnlyOnce.cs",
-              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 3\\WhichPictureWasShownOnlyOnce.cs",
-              "RelativeToolTip": "Memory_Games\\Game 3\\WhichPictureWasShownOnlyOnce.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAwDMAAAAJAAAA",
+              "Title": "HaveYouSeenThesePicturesBeforeForm.cs",
+              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 2\\HaveYouSeenThesePicturesBeforeForm.cs",
+              "RelativeDocumentMoniker": "Memory_Games\\Game 2\\HaveYouSeenThesePicturesBeforeForm.cs",
+              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 2\\HaveYouSeenThesePicturesBeforeForm.cs",
+              "RelativeToolTip": "Memory_Games\\Game 2\\HaveYouSeenThesePicturesBeforeForm.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAADYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T17:28:39.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PicturesInCorrectOrder.cs",
-              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 1\\PicturesInCorrectOrder.cs",
-              "RelativeDocumentMoniker": "Memory_Games\\Game 1\\PicturesInCorrectOrder.cs",
-              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 1\\PicturesInCorrectOrder.cs",
-              "RelativeToolTip": "Memory_Games\\Game 1\\PicturesInCorrectOrder.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwCEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T17:23:14.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BaseClassForAllGames.cs",
-              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\BaseClassForAllGames.cs",
-              "RelativeDocumentMoniker": "Memory_Games\\BaseClassForAllGames.cs",
-              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\BaseClassForAllGames.cs",
-              "RelativeToolTip": "Memory_Games\\BaseClassForAllGames.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAwwB4AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T17:21:32.23Z",
+              "WhenOpened": "2024-06-19T12:51:12.308Z",
               "EditorCaption": ""
             },
             {
@@ -123,27 +97,76 @@
               "RelativeDocumentMoniker": "Memory_Games\\Game 3\\WhichPictureWasShownOnlyOnceForm.cs",
               "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 3\\WhichPictureWasShownOnlyOnceForm.cs",
               "RelativeToolTip": "Memory_Games\\Game 3\\WhichPictureWasShownOnlyOnceForm.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAowEcAAAAMAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAD8AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T12:52:02.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HaveYouSeenThesePicturesBeforeForm.cs",
-              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 2\\HaveYouSeenThesePicturesBeforeForm.cs",
-              "RelativeDocumentMoniker": "Memory_Games\\Game 2\\HaveYouSeenThesePicturesBeforeForm.cs",
-              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 2\\HaveYouSeenThesePicturesBeforeForm.cs",
-              "RelativeToolTip": "Memory_Games\\Game 2\\HaveYouSeenThesePicturesBeforeForm.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAmwDgAAAAgAAAA",
+              "DocumentIndex": 7,
+              "Title": "BaseClassForAllGames.cs",
+              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\BaseClassForAllGames.cs",
+              "RelativeDocumentMoniker": "Memory_Games\\BaseClassForAllGames.cs",
+              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\BaseClassForAllGames.cs",
+              "RelativeToolTip": "Memory_Games\\BaseClassForAllGames.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAwwB4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:51:12.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T17:21:32.23Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PicturesInCorrectOrderForm.cs",
+              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 1\\PicturesInCorrectOrderForm.cs",
+              "RelativeDocumentMoniker": "Memory_Games\\Game 1\\PicturesInCorrectOrderForm.cs",
+              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 1\\PicturesInCorrectOrderForm.cs",
+              "RelativeToolTip": "Memory_Games\\Game 1\\PicturesInCorrectOrderForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T12:43:17.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PicturesInCorrectOrder.cs",
+              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 1\\PicturesInCorrectOrder.cs",
+              "RelativeDocumentMoniker": "Memory_Games\\Game 1\\PicturesInCorrectOrder.cs",
+              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 1\\PicturesInCorrectOrder.cs",
+              "RelativeToolTip": "Memory_Games\\Game 1\\PicturesInCorrectOrder.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T17:23:14.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerScores.cs",
+              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Scores\\PlayerScores.cs",
+              "RelativeDocumentMoniker": "Memory_Games\\Scores\\PlayerScores.cs",
+              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Scores\\PlayerScores.cs",
+              "RelativeToolTip": "Memory_Games\\Scores\\PlayerScores.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T16:44:57.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WhichPictureWasShownOnlyOnce.cs",
+              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 3\\WhichPictureWasShownOnlyOnce.cs",
+              "RelativeDocumentMoniker": "Memory_Games\\Game 3\\WhichPictureWasShownOnlyOnce.cs",
+              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 3\\WhichPictureWasShownOnlyOnce.cs",
+              "RelativeToolTip": "Memory_Games\\Game 3\\WhichPictureWasShownOnlyOnce.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAwDMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T17:28:39.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "HaveYouSeenThesePicturesBefore.cs",
               "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 2\\HaveYouSeenThesePicturesBefore.cs",
               "RelativeDocumentMoniker": "Memory_Games\\Game 2\\HaveYouSeenThesePicturesBefore.cs",
@@ -151,34 +174,7 @@
               "RelativeToolTip": "Memory_Games\\Game 2\\HaveYouSeenThesePicturesBefore.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAAACoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:45:29.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PicturesInCorrectOrderForm.cs",
-              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 1\\PicturesInCorrectOrderForm.cs",
-              "RelativeDocumentMoniker": "Memory_Games\\Game 1\\PicturesInCorrectOrderForm.cs",
-              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 1\\PicturesInCorrectOrderForm.cs",
-              "RelativeToolTip": "Memory_Games\\Game 1\\PicturesInCorrectOrderForm.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAASwH4AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:43:17.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PlayerScores.cs",
-              "DocumentMoniker": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Scores\\PlayerScores.cs",
-              "RelativeDocumentMoniker": "Memory_Games\\Scores\\PlayerScores.cs",
-              "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Scores\\PlayerScores.cs",
-              "RelativeToolTip": "Memory_Games\\Scores\\PlayerScores.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T17:10:06.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T12:45:29.328Z"
             },
             {
               "$type": "Document",
@@ -202,8 +198,7 @@
               "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Scores\\TopScoresForm.cs [Design]",
               "RelativeToolTip": "Memory_Games\\Scores\\TopScoresForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T17:06:17.343Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-19T17:06:17.343Z"
             },
             {
               "$type": "Document",
@@ -214,8 +209,7 @@
               "ToolTip": "C:\\Users\\Kika\\Documents\\C# 2\\Memory_Games_WinForms\\Memory_Games\\Game 2\\HaveYouSeenThesePicturesBeforeForm.cs [Design]",
               "RelativeToolTip": "Memory_Games\\Game 2\\HaveYouSeenThesePicturesBeforeForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T12:42:38.508Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-19T12:42:38.508Z"
             },
             {
               "$type": "Document",

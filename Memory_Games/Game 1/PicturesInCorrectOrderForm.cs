@@ -49,7 +49,7 @@ namespace Memory_Games
             Close();
         }
 
-        private void StartNewGame(object sender, EventArgs e)
+        private async void StartNewGame(object sender, EventArgs e)
         {
             panelAnswers.Visible = false;
             panelOptions.Visible = false;
@@ -72,8 +72,7 @@ namespace Memory_Games
                 if (Resources.ResourceManager.GetObject(word) is Bitmap)
                 {
                     pictureBoxShowingImages.BackgroundImage = Resources.ResourceManager.GetObject(word) as Bitmap;
-                    pictureBoxShowingImages.Refresh();
-                    Thread.Sleep(2000);
+                    await Task.Delay(2000);
                 }
             }
             pictureBoxShowingImages.Visible = false;

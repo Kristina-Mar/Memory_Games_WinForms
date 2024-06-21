@@ -30,7 +30,7 @@ namespace Memory_Games
             Close();
         }
 
-        private void StartNewGame(object sender, EventArgs e)
+        private async void StartNewGame(object sender, EventArgs e)
         {
             gameDescription.Visible = false;
             buttonStartNewGame.Location = new Point(162, 24);
@@ -53,8 +53,7 @@ namespace Memory_Games
                 panelAllCards.Controls[i].BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfWordsToShowToPlayer[i]) as Bitmap;
             }
 
-            panelAllCards.Refresh();
-            Thread.Sleep(30000);
+            await Task.Delay(30000);
 
             panelAllCards.Visible = false;
             pictureBoxPicturesToGuess.Visible = true;

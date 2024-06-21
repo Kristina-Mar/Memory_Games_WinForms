@@ -28,7 +28,7 @@ namespace Memory_Games
             Close();
         }
 
-        private void StartNewGame(object sender, EventArgs e)
+        private async void StartNewGame(object sender, EventArgs e)
         {
             gameDescription.Visible = false;
             buttonStartNewGame.Location = new Point(155, 31);
@@ -47,8 +47,7 @@ namespace Memory_Games
                 }
                 pictureBoxShowingImages.Refresh();
                 labelPictureNumber.Text = $"Picture number {i + 1}:";
-                labelPictureNumber.Refresh();
-                Thread.Sleep(2000);
+                await Task.Delay(2000);
             }
 
             pictureBoxShowingImages.Visible = false;
@@ -63,8 +62,8 @@ namespace Memory_Games
                     panelOptions.Controls[i].BackgroundImage = Resources.ResourceManager.GetObject(uniqueValues[i]) as Bitmap;
                     panelOptions.Controls[i].Tag = uniqueValues[i];
                 }
-                panelOptions.Controls[i].Refresh();
             }
+            _gameStart = DateTime.Now;
         }
 
         private void SubmitAnswerByClickingOnPicture(object sender, EventArgs e)

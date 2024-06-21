@@ -20,3 +20,4 @@ C:\Users\Kika\Documents\C# 2\Memory_Games_WinForms\Memory_Games\obj\Debug\net8.0
 C:\Users\Kika\Documents\C# 2\Memory_Games_WinForms\Memory_Games\obj\Debug\net8.0-windows\Memory_Games.WhichPictureWasShownOnlyOnceForm.resources
 C:\Users\Kika\Documents\C# 2\Memory_Games_WinForms\Memory_Games\obj\Debug\net8.0-windows\Memory_Games.TopScoresForm.resources
 C:\Users\Kika\Documents\C# 2\Memory_Games_WinForms\Memory_Games\obj\Debug\net8.0-windows\Memory_Games.GetPlayerNameAndSaveTheirScoreForm.resources
+C:\Users\Kika\Documents\C# 2\Memory_Games_WinForms\Memory_Games\obj\Debug\net8.0-windows\Memory_Games.sourcelink.json
