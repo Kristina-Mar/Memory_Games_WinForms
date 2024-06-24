@@ -58,7 +58,7 @@ namespace Memory_Games
             panelOptions.Enabled = true;
 
             List<string> uniqueValues = Game.ListOfWordsToShowToPlayer.Distinct().Order().ToList();
-            for (int i = 0; i < uniqueValues.Count(); i++)
+            for (int i = 0; i < uniqueValues.Count; i++)
             {
                 if (Resources.ResourceManager.GetObject(uniqueValues[i]) is Bitmap)
                 {

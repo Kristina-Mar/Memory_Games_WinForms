@@ -39,7 +39,7 @@ namespace Memory_Games.Scores
         public bool IsScoreAmongTopScores()
         {
             TopScores = ReturnOrderedBestScoresForThisGame(GameName).ToList();
-            if (TopScores.Count() < 5)
+            if (TopScores.Count < 5)
             {
                 return true;
             }
@@ -58,12 +58,12 @@ namespace Memory_Games.Scores
         public static List<PlayerScores> ReturnOrderedBestScoresForThisGame(string gameName)
         {
             TopScores = LoadBestScoresFromFile(gameName);
-            if (TopScores.Count() == 0)
+            if (TopScores.Count == 0)
             {
             }
             else
             {
-                TopScores.OrderByDescending(p => p.CorrectAnswers).ThenBy(p => p.Time);
+                TopScores = TopScores.OrderByDescending(p => p.CorrectAnswers).ThenBy(p => p.Time).ToList();
             }
             return TopScores;
         }
@@ -78,7 +78,7 @@ namespace Memory_Games.Scores
         // Only top 5 scores are saved.
         {
             TopScores = TopScores.OrderByDescending(p => p.CorrectAnswers).ThenBy(p => p.Time).ToList();
-            TopScores.RemoveAt(TopScores.Count() - 1);
+            TopScores.RemoveAt(TopScores.Count - 1);
         }
 
         private static void SetValidTopScoreFilePath(string gameName)

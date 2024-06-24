@@ -24,7 +24,7 @@ namespace Memory_Games
 
         protected string PickAWordFromListOfAllWords()
         {
-            int i = _randomIndexGenerator.Next(AllWords.Count());
+            int i = _randomIndexGenerator.Next(AllWords.Count);
             return AllWords[i];
         }
 
