@@ -44,7 +44,7 @@ namespace Memory_Games.Scores
                 return true;
             }
             else if (CorrectAnswers > TopScores.Last().CorrectAnswers
-                || CorrectAnswers == TopScores.Last().CorrectAnswers && Time < TopScores.Last().Time)
+                || (CorrectAnswers == TopScores.Last().CorrectAnswers && Time < TopScores.Last().Time))
             {
                 RemoveLowestScore(GameName);
                 return true;
