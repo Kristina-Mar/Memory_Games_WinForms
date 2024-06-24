@@ -89,6 +89,7 @@ namespace Memory_Games
                 pictureBoxOptions[i].Tag = orderedList.ElementAt(i);
             }
             buttonSubmitAnswers.Visible = true;
+            buttonSubmitAnswers.Enabled = true;
             labelInstruction.Visible = true;
             _gameStart = DateTime.Now;
         }
@@ -126,6 +127,7 @@ namespace Memory_Games
         private void SubmitAnswers(object sender, EventArgs e)
         {
             Game.PlayerTime = (DateTime.Now - _gameStart).TotalSeconds;
+            buttonSubmitAnswers.Enabled = false;
             for (int i = 0; i < 10; i++)
             {
                 if (pictureBoxAnswers[i].Tag is not null)

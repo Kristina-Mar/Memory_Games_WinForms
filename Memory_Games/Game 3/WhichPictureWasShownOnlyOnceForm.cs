@@ -55,6 +55,7 @@ namespace Memory_Games
             pictureBoxShowingImages.Visible = false;
             labelPictureNumber.Visible = false;
             panelOptions.Visible = true;
+            panelOptions.Enabled = true;
 
             List<string> uniqueValues = Game.ListOfWordsToShowToPlayer.Distinct().Order().ToList();
             for (int i = 0; i < uniqueValues.Count(); i++)
@@ -72,6 +73,7 @@ namespace Memory_Games
         private void SubmitAnswerByClickingOnPicture(object sender, EventArgs e)
         {
             Game.PlayerTime = (DateTime.Now - _gameStart).TotalSeconds;
+            panelOptions.Enabled = false;
             Game.PlayerAnswers[0] = ((PictureBox)sender).Tag.ToString();
             Game.CheckPlayerAnswers();
             MessageBox.Show(Game.ShowPlayerScore());
