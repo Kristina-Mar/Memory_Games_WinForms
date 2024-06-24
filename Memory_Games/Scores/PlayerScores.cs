@@ -36,6 +36,38 @@ namespace Memory_Games.Scores
             Time = time;
         }
 
+        public bool IsScoreAmongTopScores()
+        {
+            TopScores = ReturnOrderedBestScoresForThisGame(GameName).ToList();
+            if (TopScores.Count() < 5)
+            {
+                return true;
+            }
+            else if (CorrectAnswers > TopScores.Last().CorrectAnswers
+                || CorrectAnswers == TopScores.Last().CorrectAnswers && Time < TopScores.Last().Time)
+            {
+                RemoveLowestScore(GameName);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static List<PlayerScores> ReturnOrderedBestScoresForThisGame(string gameName)
+        {
+            TopScores = LoadBestScoresFromFile(gameName);
+            if (TopScores.Count() == 0)
+            {
+            }
+            else
+            {
+                TopScores.OrderByDescending(p => p.CorrectAnswers).ThenBy(p => p.Time);
+            }
+            return TopScores;
+        }
+
         public void AddNewScoreToTopScores()
         {
             TopScores.Add(this);
@@ -98,38 +130,6 @@ namespace Memory_Games.Scores
             {
                 serializer.WriteObject(writer, TopScores);
             }
-        }
-
-        public bool IsScoreAmongTopScores()
-        {
-            TopScores = ReturnOrderedBestScoresForThisGame(GameName).ToList();
-            if (TopScores.Count() < 5)
-            {
-                return true;
-            }
-            else if (CorrectAnswers > TopScores.Last().CorrectAnswers
-                || CorrectAnswers == TopScores.Last().CorrectAnswers && Time < TopScores.Last().Time)
-            {
-                RemoveLowestScore(GameName);
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public static List<PlayerScores> ReturnOrderedBestScoresForThisGame(string gameName)
-        {
-            TopScores = LoadBestScoresFromFile(gameName);
-            if (TopScores.Count() == 0)
-            {
-            }
-            else
-            {
-                TopScores.OrderByDescending(p => p.CorrectAnswers).ThenBy(p => p.Time);
-            }
-            return TopScores;
         }
     }
 }
