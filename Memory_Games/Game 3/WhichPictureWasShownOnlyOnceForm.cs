@@ -33,6 +33,10 @@ namespace Memory_Games
         {
             gameDescription.Visible = false;
             buttonStartNewGame.Location = new Point(155, 20);
+            foreach (PictureBox p in panelOptions.Controls)
+            {
+                p.BackgroundImage = null;
+            }
             panelOptions.Visible = false;
             pictureBoxShowingImages.Visible = true;
             labelPictureNumber.Visible = true;
