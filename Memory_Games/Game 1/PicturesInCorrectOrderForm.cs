@@ -43,6 +43,7 @@ namespace Memory_Games
             buttonSubmitAnswers.Visible = false;
             pictureBoxShowingImages.Visible = false;
             labelInstruction.Visible = false;
+            labelCorrectAnswers.Visible = false;
         }
 
         private void GoBackToGameSelection(object sender, EventArgs e)
@@ -59,6 +60,7 @@ namespace Memory_Games
             buttonStartNewGame.Location = new Point(137, 45);
             gameDescription.Visible = false;
             labelInstruction.Visible = false;
+            labelCorrectAnswers.Visible = false;
 
             foreach (PictureBox p in panelAnswers.Controls)
             {
@@ -140,6 +142,11 @@ namespace Memory_Games
                 }
             }
             Game.CheckPlayerAnswers();
+            labelCorrectAnswers.Visible = true;
+            for (int i = 0; i < 10; i++)
+            {
+                pictureBoxOptions[i].BackgroundImage = Resources.ResourceManager.GetObject(Game.GameSolution[i]) as Bitmap;
+            }
             MessageBox.Show(Game.ShowPlayerScore());
             if (Game.PlayerCorrectAnswers > 0 && Game.DidPlayerMakeItToTopScores())
             {

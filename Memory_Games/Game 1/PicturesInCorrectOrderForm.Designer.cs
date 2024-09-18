@@ -58,6 +58,7 @@
             gameDescription = new RichTextBox();
             labelAttribution = new Label();
             labelInstruction = new Label();
+            labelCorrectAnswers = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAnswer1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxOption1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxOption2).BeginInit();
@@ -347,7 +348,7 @@
             // buttonSubmitAnswers
             // 
             buttonSubmitAnswers.Font = new Font("Arial", 10F);
-            buttonSubmitAnswers.Location = new Point(495, 473);
+            buttonSubmitAnswers.Location = new Point(495, 502);
             buttonSubmitAnswers.Name = "buttonSubmitAnswers";
             buttonSubmitAnswers.Size = new Size(119, 46);
             buttonSubmitAnswers.TabIndex = 21;
@@ -399,7 +400,7 @@
             panelOptions.Controls.Add(pictureBoxOption8);
             panelOptions.Controls.Add(pictureBoxOption9);
             panelOptions.Controls.Add(pictureBoxOption10);
-            panelOptions.Location = new Point(12, 345);
+            panelOptions.Location = new Point(12, 364);
             panelOptions.Name = "panelOptions";
             panelOptions.Size = new Size(1084, 122);
             panelOptions.TabIndex = 27;
@@ -453,12 +454,24 @@
             labelInstruction.TabIndex = 31;
             labelInstruction.Text = "Drag and drop the pictures to their correct position:";
             // 
+            // labelCorrectAnswers
+            // 
+            labelCorrectAnswers.AutoSize = true;
+            labelCorrectAnswers.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            labelCorrectAnswers.ForeColor = Color.LimeGreen;
+            labelCorrectAnswers.Location = new Point(12, 343);
+            labelCorrectAnswers.Name = "labelCorrectAnswers";
+            labelCorrectAnswers.Size = new Size(132, 19);
+            labelCorrectAnswers.TabIndex = 32;
+            labelCorrectAnswers.Text = "Correct answer:";
+            // 
             // PicturesInCorrectOrderForm
             // 
             AllowDrop = true;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1111, 618);
+            Controls.Add(labelCorrectAnswers);
             Controls.Add(labelInstruction);
             Controls.Add(labelAttribution);
             Controls.Add(gameDescription);
@@ -531,5 +544,6 @@
         private RichTextBox gameDescription;
         private Label labelAttribution;
         private Label labelInstruction;
+        private Label labelCorrectAnswers;
     }
 }
