@@ -84,13 +84,6 @@ namespace Memory_Games
             }
         }
 
-        /*private void ShowIfPlayerGuessedCorrectly()
-        {
-            labelCorrectOrIncorrect.Visible = true;
-            labelCorrectOrIncorrect.Text = "Correct!";
-            labelCorrectOrIncorrect.ForeColor = Color.Green;
-        }*/
-
         private void SubmitAnswer(object sender, EventArgs e)
         {
             string playerAnswer = ((Button)sender).Text;
@@ -98,7 +91,8 @@ namespace Memory_Games
             {
                 Game.PlayerAnswers[_index] = Game.ListOfPicturesToShowToPlayer[_index];
             }
-            
+            ShowIfPlayerGuessedCorrectly(_index);
+
             if (_index < Game.ListOfPicturesToShowToPlayer.Count() - 1)
             {
                 pictureBoxPicturesToGuess.BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfPicturesToShowToPlayer[_index + 1]) as Bitmap;
@@ -117,6 +111,20 @@ namespace Memory_Games
                     getPlayerName.Show();
                 }
             }
+        }
+        private void ShowIfPlayerGuessedCorrectly(int index)
+        {
+            if (Game.GameSolution[index] == Game.PlayerAnswers[index])
+            {
+                labelCorrectOrIncorrect.Text = "Correct!";
+                labelCorrectOrIncorrect.ForeColor = Color.Green;
+            }
+            else
+            {
+                labelCorrectOrIncorrect.Text = "Incorrect!";
+                labelCorrectOrIncorrect.ForeColor = Color.Red;
+            }
+            labelCorrectOrIncorrect.Visible = true;
         }
 
         private void ShowTopScores(object sender, EventArgs e)
