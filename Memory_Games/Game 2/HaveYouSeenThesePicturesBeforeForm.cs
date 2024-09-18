@@ -5,9 +5,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.Design;
 
 namespace Memory_Games
 {
@@ -26,6 +29,7 @@ namespace Memory_Games
             buttonNo.Visible = false;
             labelInstruction.Visible = false;
             panelCountdown.Visible = false;
+            labelCorrectOrIncorrect.Visible = false;
         }
 
         private void GoBackToGameSelection_Click(object sender, EventArgs e)
@@ -47,14 +51,15 @@ namespace Memory_Games
             pictureBoxPicturesToGuess.Visible = false;
             buttonYes.Visible = false;
             buttonNo.Visible = false;
+            labelCorrectOrIncorrect.Visible = false;
             _index = 0;
 
             Game = new HaveYouSeenThesePicturesBefore();
             Game.SetUpGame();
 
-            for (int i = 0; i < Game.ListOfWordsToShowToPlayer.Count(); i++)
+            for (int i = 0; i < Game.OriginalSelectionOfWords.Count(); i++)
             {
-                panelAllCards.Controls[i].BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfWordsToShowToPlayer[i]) as Bitmap;
+                panelAllCards.Controls[i].BackgroundImage = Resources.ResourceManager.GetObject(Game.OriginalSelectionOfWords[i]) as Bitmap;
             }
             _remainingTime = 30;
             labelRemainingTime.Text = $"{_remainingTime.ToString()} s";
@@ -72,46 +77,31 @@ namespace Memory_Games
             buttonYes.Enabled = true;
             labelInstruction.Visible = true;
 
-            if (Resources.ResourceManager.GetObject(Game.GameSolution[_index]) is Bitmap)
+            if (Resources.ResourceManager.GetObject(Game.ListOfWordsToShowToPlayer[_index]) is Bitmap)
             {
                 _gameStart = DateTime.Now;
-                pictureBoxPicturesToGuess.BackgroundImage = Resources.ResourceManager.GetObject(Game.GameSolution[_index]) as Bitmap;
+                pictureBoxPicturesToGuess.BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfWordsToShowToPlayer[_index]) as Bitmap;
             }
+        }
 
-            if (Game.ListOfWordsToShowToPlayer.Contains(Game.GameSolution[_index]))
-            {
-                Game.GameSolution[_index] = "Y";
-            }
-            else
-            {
-                Game.GameSolution[_index] = "N";
-            }
-            _index++;
+        private void ShowIfPlayerGuessedCorrectly()
+        {
+            labelCorrectOrIncorrect.Visible = true;
+            labelCorrectOrIncorrect.Text = "Correct!";
+            labelCorrectOrIncorrect.ForeColor = Color.Green;
         }
 
         private void SubmitAnswer(object sender, EventArgs e)
         {
-            switch (((Button)sender).Text)
+            string playerAnswer = ((Button)sender).Text;
+            if (playerAnswer == "Yes")
             {
-                case "Yes":
-                    Game.PlayerAnswers[_index - 1] = "Y";
-                    break;
-                case "No":
-                    Game.PlayerAnswers[_index - 1] = "N";
-                    break;
+                Game.PlayerAnswers[_index] = Game.ListOfWordsToShowToPlayer[_index];
             }
-
-            if (_index < Game.GameSolution.Count())
+            
+            if (_index < Game.ListOfWordsToShowToPlayer.Count() - 1)
             {
-                pictureBoxPicturesToGuess.BackgroundImage = Resources.ResourceManager.GetObject(Game.GameSolution[_index]) as Bitmap;
-                if (Game.ListOfWordsToShowToPlayer.Contains(Game.GameSolution[_index]))
-                {
-                    Game.GameSolution[_index] = "Y";
-                }
-                else
-                {
-                    Game.GameSolution[_index] = "N";
-                }
+                pictureBoxPicturesToGuess.BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfWordsToShowToPlayer[_index + 1]) as Bitmap;
                 _index++;
             }
             else

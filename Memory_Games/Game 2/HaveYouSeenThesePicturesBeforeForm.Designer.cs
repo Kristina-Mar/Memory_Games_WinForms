@@ -74,6 +74,7 @@
             labelRemainingTime = new Label();
             label1 = new Label();
             panelCountdown = new Panel();
+            labelCorrectOrIncorrect = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -537,7 +538,7 @@
             // 
             labelInstruction.AutoSize = true;
             labelInstruction.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            labelInstruction.Location = new Point(296, 130);
+            labelInstruction.Location = new Point(296, 100);
             labelInstruction.Name = "labelInstruction";
             labelInstruction.Size = new Size(247, 18);
             labelInstruction.TabIndex = 37;
@@ -578,6 +579,17 @@
             panelCountdown.Size = new Size(195, 39);
             panelCountdown.TabIndex = 40;
             // 
+            // labelCorrectOrIncorrect
+            // 
+            labelCorrectOrIncorrect.AutoSize = true;
+            labelCorrectOrIncorrect.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            labelCorrectOrIncorrect.Location = new Point(385, 137);
+            labelCorrectOrIncorrect.Name = "labelCorrectOrIncorrect";
+            labelCorrectOrIncorrect.Size = new Size(70, 19);
+            labelCorrectOrIncorrect.TabIndex = 41;
+            labelCorrectOrIncorrect.Text = "Correct!";
+            labelCorrectOrIncorrect.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // HaveYouSeenThesePicturesBeforeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -585,13 +597,14 @@
             ClientSize = new Size(839, 806);
             Controls.Add(panelCountdown);
             Controls.Add(labelAttribution);
+            Controls.Add(labelCorrectOrIncorrect);
+            Controls.Add(labelInstruction);
             Controls.Add(buttonYes);
             Controls.Add(buttonNo);
             Controls.Add(buttonTopScores);
             Controls.Add(buttonBackToGameSelection);
             Controls.Add(gameDescription);
             Controls.Add(buttonStartNewGame);
-            Controls.Add(labelInstruction);
             Controls.Add(pictureBoxPicturesToGuess);
             Controls.Add(panelAllCards);
             Name = "HaveYouSeenThesePicturesBeforeForm";
@@ -681,5 +694,6 @@
         private Label labelRemainingTime;
         private Label label1;
         private Panel panelCountdown;
+        private Label labelCorrectOrIncorrect;
     }
 }
