@@ -63,13 +63,13 @@
             buttonTopScores = new Button();
             buttonBackToGameSelection = new Button();
             buttonStartNewGame = new Button();
-            panelAllCards = new Panel();
+            panelOriginalSelectionOfPictures = new Panel();
             pictureBoxPicturesToGuess = new PictureBox();
             buttonYes = new Button();
             buttonNo = new Button();
             gameDescription = new RichTextBox();
             labelAttribution = new Label();
-            labelInstruction = new Label();
+            labelInstructions = new Label();
             timer = new System.Windows.Forms.Timer(components);
             labelRemainingTime = new Label();
             label1 = new Label();
@@ -105,7 +105,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox27).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox26).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox25).BeginInit();
-            panelAllCards.SuspendLayout();
+            panelOriginalSelectionOfPictures.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxPicturesToGuess).BeginInit();
             panelCountdown.SuspendLayout();
             SuspendLayout();
@@ -445,40 +445,40 @@
             // 
             // panelAllCards
             // 
-            panelAllCards.Controls.Add(pictureBox1);
-            panelAllCards.Controls.Add(pictureBox2);
-            panelAllCards.Controls.Add(pictureBox3);
-            panelAllCards.Controls.Add(pictureBox4);
-            panelAllCards.Controls.Add(pictureBox5);
-            panelAllCards.Controls.Add(pictureBox6);
-            panelAllCards.Controls.Add(pictureBox7);
-            panelAllCards.Controls.Add(pictureBox8);
-            panelAllCards.Controls.Add(pictureBox9);
-            panelAllCards.Controls.Add(pictureBox10);
-            panelAllCards.Controls.Add(pictureBox11);
-            panelAllCards.Controls.Add(pictureBox12);
-            panelAllCards.Controls.Add(pictureBox13);
-            panelAllCards.Controls.Add(pictureBox14);
-            panelAllCards.Controls.Add(pictureBox15);
-            panelAllCards.Controls.Add(pictureBox16);
-            panelAllCards.Controls.Add(pictureBox17);
-            panelAllCards.Controls.Add(pictureBox18);
-            panelAllCards.Controls.Add(pictureBox19);
-            panelAllCards.Controls.Add(pictureBox20);
-            panelAllCards.Controls.Add(pictureBox21);
-            panelAllCards.Controls.Add(pictureBox22);
-            panelAllCards.Controls.Add(pictureBox23);
-            panelAllCards.Controls.Add(pictureBox24);
-            panelAllCards.Controls.Add(pictureBox25);
-            panelAllCards.Controls.Add(pictureBox26);
-            panelAllCards.Controls.Add(pictureBox27);
-            panelAllCards.Controls.Add(pictureBox28);
-            panelAllCards.Controls.Add(pictureBox29);
-            panelAllCards.Controls.Add(pictureBox30);
-            panelAllCards.Location = new Point(12, 76);
-            panelAllCards.Name = "panelAllCards";
-            panelAllCards.Size = new Size(813, 689);
-            panelAllCards.TabIndex = 33;
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox1);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox2);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox3);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox4);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox5);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox6);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox7);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox8);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox9);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox10);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox11);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox12);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox13);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox14);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox15);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox16);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox17);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox18);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox19);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox20);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox21);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox22);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox23);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox24);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox25);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox26);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox27);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox28);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox29);
+            panelOriginalSelectionOfPictures.Controls.Add(pictureBox30);
+            panelOriginalSelectionOfPictures.Location = new Point(12, 76);
+            panelOriginalSelectionOfPictures.Name = "panelAllCards";
+            panelOriginalSelectionOfPictures.Size = new Size(813, 689);
+            panelOriginalSelectionOfPictures.TabIndex = 33;
             // 
             // pictureBoxPicturesToGuess
             // 
@@ -536,13 +536,13 @@
             // 
             // labelInstruction
             // 
-            labelInstruction.AutoSize = true;
-            labelInstruction.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            labelInstruction.Location = new Point(296, 100);
-            labelInstruction.Name = "labelInstruction";
-            labelInstruction.Size = new Size(247, 18);
-            labelInstruction.TabIndex = 37;
-            labelInstruction.Text = "Have you seen this picture before?";
+            labelInstructions.AutoSize = true;
+            labelInstructions.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            labelInstructions.Location = new Point(296, 100);
+            labelInstructions.Name = "labelInstruction";
+            labelInstructions.Size = new Size(247, 18);
+            labelInstructions.TabIndex = 37;
+            labelInstructions.Text = "Have you seen this picture before?";
             // 
             // timer
             // 
@@ -598,7 +598,7 @@
             Controls.Add(panelCountdown);
             Controls.Add(labelAttribution);
             Controls.Add(labelCorrectOrIncorrect);
-            Controls.Add(labelInstruction);
+            Controls.Add(labelInstructions);
             Controls.Add(buttonYes);
             Controls.Add(buttonNo);
             Controls.Add(buttonTopScores);
@@ -606,7 +606,7 @@
             Controls.Add(gameDescription);
             Controls.Add(buttonStartNewGame);
             Controls.Add(pictureBoxPicturesToGuess);
-            Controls.Add(panelAllCards);
+            Controls.Add(panelOriginalSelectionOfPictures);
             Name = "HaveYouSeenThesePicturesBeforeForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Find the imposters";
@@ -640,7 +640,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox27).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox26).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox25).EndInit();
-            panelAllCards.ResumeLayout(false);
+            panelOriginalSelectionOfPictures.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBoxPicturesToGuess).EndInit();
             panelCountdown.ResumeLayout(false);
             panelCountdown.PerformLayout();
@@ -683,13 +683,13 @@
         private Button buttonTopScores;
         private Button buttonBackToGameSelection;
         private Button buttonStartNewGame;
-        private Panel panelAllCards;
+        private Panel panelOriginalSelectionOfPictures;
         private PictureBox pictureBoxPicturesToGuess;
         private Button buttonYes;
         private Button buttonNo;
         private RichTextBox gameDescription;
         private Label labelAttribution;
-        private Label labelInstruction;
+        private Label labelInstructions;
         private System.Windows.Forms.Timer timer;
         private Label labelRemainingTime;
         private Label label1;

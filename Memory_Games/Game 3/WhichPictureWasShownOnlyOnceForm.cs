@@ -19,9 +19,9 @@ namespace Memory_Games
         {
             InitializeComponent();
             panelOptions.Visible = false;
-            pictureBoxShowingImages.Visible = false;
+            pictureBoxShowingPictures.Visible = false;
             labelPictureNumber.Visible = false;
-            labelInstruction.Visible = false;
+            labelInstructions.Visible = false;
         }
 
         private void GoBackToGameSelection(object sender, EventArgs e)
@@ -38,30 +38,30 @@ namespace Memory_Games
                 p.BackgroundImage = null;
             }
             panelOptions.Visible = false;
-            pictureBoxShowingImages.Visible = true;
+            pictureBoxShowingPictures.Visible = true;
             labelPictureNumber.Visible = true;
-            labelInstruction.Visible = false;
+            labelInstructions.Visible = false;
 
             Game = new WhichPictureWasShownOnlyOnce();
             Game.SetUpGame();
 
-            for (int i = 0; i < Game.ListOfWordsToShowToPlayer.Count(); i++)
+            for (int i = 0; i < Game.ListOfPicturesToShowToPlayer.Count(); i++)
             {
-                if (Resources.ResourceManager.GetObject(Game.ListOfWordsToShowToPlayer[i]) is Bitmap)
+                if (Resources.ResourceManager.GetObject(Game.ListOfPicturesToShowToPlayer[i]) is Bitmap)
                 {
-                    pictureBoxShowingImages.BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfWordsToShowToPlayer[i]) as Bitmap;
+                    pictureBoxShowingPictures.BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfPicturesToShowToPlayer[i]) as Bitmap;
                 }
-                pictureBoxShowingImages.Refresh();
+                pictureBoxShowingPictures.Refresh();
                 labelPictureNumber.Text = $"Picture number {i + 1}:";
                 await Task.Delay(2000);
             }
 
-            pictureBoxShowingImages.Visible = false;
+            pictureBoxShowingPictures.Visible = false;
             labelPictureNumber.Visible = false;
             panelOptions.Visible = true;
             panelOptions.Enabled = true;
 
-            List<string> uniqueValues = Game.ListOfWordsToShowToPlayer.Distinct().Order().ToList();
+            List<string> uniqueValues = Game.ListOfPicturesToShowToPlayer.Distinct().Order().ToList();
             for (int i = 0; i < uniqueValues.Count; i++)
             {
                 if (Resources.ResourceManager.GetObject(uniqueValues[i]) is Bitmap)
@@ -70,7 +70,7 @@ namespace Memory_Games
                     panelOptions.Controls[i].Tag = uniqueValues[i];
                 }
             }
-            labelInstruction.Visible = true;
+            labelInstructions.Visible = true;
             _gameStart = DateTime.Now;
         }
 

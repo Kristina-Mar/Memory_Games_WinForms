@@ -16,7 +16,7 @@ namespace Memory_Games
             {
                 AllWordsFromResources.Add(v.Key.ToString());
             }
-            BaseClassForAllGames.AllWords = AllWordsFromResources;
+            BaseClassForAllGames.AllPictures = AllWordsFromResources;
         }
 
         private void buttonGame1_Click(object sender, EventArgs e)

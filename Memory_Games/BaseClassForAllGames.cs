@@ -10,10 +10,10 @@ namespace Memory_Games
 {
     public abstract class BaseClassForAllGames
     {
-        public static List<string> AllWords = new List<string>();
+        public static List<string> AllPictures = new List<string>();
 
         public abstract string GameName { get; }
-        public abstract string[] ListOfWordsToShowToPlayer { get; protected set; }
+        public abstract string[] ListOfPicturesToShowToPlayer { get; protected set; }
         public abstract string[] GameSolution { get; protected set; }
         public abstract string[] PlayerAnswers { get; protected set; }
         public abstract double PlayerTime { get; set; }
@@ -22,10 +22,10 @@ namespace Memory_Games
 
         private Random _randomIndexGenerator = new Random();
 
-        protected string PickAWordFromListOfAllWords()
+        protected string PickNewPicture()
         {
-            int i = _randomIndexGenerator.Next(AllWords.Count);
-            return AllWords[i];
+            int i = _randomIndexGenerator.Next(AllPictures.Count);
+            return AllPictures[i];
         }
 
         public abstract void SetUpGame();

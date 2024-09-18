@@ -10,8 +10,8 @@ namespace Memory_Games
     public class HaveYouSeenThesePicturesBefore : BaseClassForAllGames
     {
         public override string GameName { get; } = "Game 2";
-        public string[] OriginalSelectionOfWords { get; protected set; } = new string[30];
-        public override string[] ListOfWordsToShowToPlayer { get; protected set; } = new string[10];
+        public string[] OriginalSelectionOfPictures { get; protected set; } = new string[30];
+        public override string[] ListOfPicturesToShowToPlayer { get; protected set; } = new string[10];
         public override string[] GameSolution { get; protected set; } = new string[10];
         public override string[] PlayerAnswers { get; protected set; } = new string[10];
         public override int PlayerCorrectAnswers { get; protected set; } = 0;
@@ -22,28 +22,28 @@ namespace Memory_Games
         {
             PlayerCorrectAnswers = 0;
             PlayerTime = 0;
-            string newWord = PickAWordFromListOfAllWords();
-            for (int i = 0; i < OriginalSelectionOfWords.Length; i++)
+            string newPicture = PickNewPicture();
+            for (int i = 0; i < OriginalSelectionOfPictures.Length; i++)
             {
-                while (OriginalSelectionOfWords.Contains(newWord))
+                while (OriginalSelectionOfPictures.Contains(newPicture))
                 {
-                    newWord = PickAWordFromListOfAllWords();
+                    newPicture = PickNewPicture();
                 }
-                OriginalSelectionOfWords[i] = newWord;
+                OriginalSelectionOfPictures[i] = newPicture;
             }
 
-            newWord = PickAWordFromListOfAllWords();
-            for (int i = 0; i < ListOfWordsToShowToPlayer.Length; i++)
+            newPicture = PickNewPicture();
+            for (int i = 0; i < ListOfPicturesToShowToPlayer.Length; i++)
             {
-                while (ListOfWordsToShowToPlayer.Contains(newWord))
+                while (ListOfPicturesToShowToPlayer.Contains(newPicture))
                 {
-                    newWord = PickAWordFromListOfAllWords();
+                    newPicture = PickNewPicture();
                 }
-                ListOfWordsToShowToPlayer[i] = newWord;
+                ListOfPicturesToShowToPlayer[i] = newPicture;
 
-                if(OriginalSelectionOfWords.Contains(newWord))
+                if(OriginalSelectionOfPictures.Contains(newPicture))
                 {
-                    GameSolution[i] = newWord;
+                    GameSolution[i] = newPicture;
                 }
             }
         }

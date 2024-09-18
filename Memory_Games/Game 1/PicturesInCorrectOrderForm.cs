@@ -41,8 +41,8 @@ namespace Memory_Games
             panelAnswers.Visible = false;
             panelOptions.Visible = false;
             buttonSubmitAnswers.Visible = false;
-            pictureBoxShowingImages.Visible = false;
-            labelInstruction.Visible = false;
+            pictureBoxShowingPictures.Visible = false;
+            labelInstructions.Visible = false;
             labelCorrectAnswers.Visible = false;
         }
 
@@ -56,10 +56,10 @@ namespace Memory_Games
             panelAnswers.Visible = false;
             panelOptions.Visible = false;
             buttonSubmitAnswers.Visible = false;
-            pictureBoxShowingImages.Visible = true;
+            pictureBoxShowingPictures.Visible = true;
             buttonStartNewGame.Location = new Point(137, 45);
             gameDescription.Visible = false;
-            labelInstruction.Visible = false;
+            labelInstructions.Visible = false;
             labelCorrectAnswers.Visible = false;
 
             foreach (PictureBox p in panelAnswers.Controls)
@@ -71,19 +71,19 @@ namespace Memory_Games
             Game = new PicturesInCorrectOrder();
             Game.SetUpGame();
 
-            foreach (string word in Game.ListOfWordsToShowToPlayer)
+            foreach (string word in Game.ListOfPicturesToShowToPlayer)
             {
                 if (Resources.ResourceManager.GetObject(word) is Bitmap)
                 {
-                    pictureBoxShowingImages.BackgroundImage = Resources.ResourceManager.GetObject(word) as Bitmap;
+                    pictureBoxShowingPictures.BackgroundImage = Resources.ResourceManager.GetObject(word) as Bitmap;
                     await Task.Delay(2000);
                 }
             }
-            pictureBoxShowingImages.Visible = false;
+            pictureBoxShowingPictures.Visible = false;
             panelOptions.Visible = true;
             panelAnswers.Visible = true;
 
-            var orderedList = Game.ListOfWordsToShowToPlayer.Order();
+            var orderedList = Game.ListOfPicturesToShowToPlayer.Order();
 
             for (int i = 0; i < 10; i++)
             {
@@ -92,7 +92,7 @@ namespace Memory_Games
             }
             buttonSubmitAnswers.Visible = true;
             buttonSubmitAnswers.Enabled = true;
-            labelInstruction.Visible = true;
+            labelInstructions.Visible = true;
             _gameStart = DateTime.Now;
         }
 

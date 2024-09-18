@@ -52,12 +52,12 @@
             buttonSubmitAnswers = new Button();
             buttonBackToGameSelection = new Button();
             buttonTopScores = new Button();
-            pictureBoxShowingImages = new PictureBox();
+            pictureBoxShowingPictures = new PictureBox();
             panelOptions = new Panel();
             panelAnswers = new Panel();
             gameDescription = new RichTextBox();
             labelAttribution = new Label();
-            labelInstruction = new Label();
+            labelInstructions = new Label();
             labelCorrectAnswers = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAnswer1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxOption1).BeginInit();
@@ -79,7 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxAnswer7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxOption6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAnswer6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxShowingImages).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxShowingPictures).BeginInit();
             panelOptions.SuspendLayout();
             panelAnswers.SuspendLayout();
             SuspendLayout();
@@ -380,13 +380,13 @@
             // 
             // pictureBoxShowingImages
             // 
-            pictureBoxShowingImages.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBoxShowingImages.BorderStyle = BorderStyle.FixedSingle;
-            pictureBoxShowingImages.Location = new Point(363, 139);
-            pictureBoxShowingImages.Name = "pictureBoxShowingImages";
-            pictureBoxShowingImages.Size = new Size(380, 380);
-            pictureBoxShowingImages.TabIndex = 24;
-            pictureBoxShowingImages.TabStop = false;
+            pictureBoxShowingPictures.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBoxShowingPictures.BorderStyle = BorderStyle.FixedSingle;
+            pictureBoxShowingPictures.Location = new Point(363, 139);
+            pictureBoxShowingPictures.Name = "pictureBoxShowingImages";
+            pictureBoxShowingPictures.Size = new Size(380, 380);
+            pictureBoxShowingPictures.TabIndex = 24;
+            pictureBoxShowingPictures.TabStop = false;
             // 
             // panelOptions
             // 
@@ -446,13 +446,13 @@
             // 
             // labelInstruction
             // 
-            labelInstruction.AutoSize = true;
-            labelInstruction.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            labelInstruction.Location = new Point(12, 139);
-            labelInstruction.Name = "labelInstruction";
-            labelInstruction.Size = new Size(359, 18);
-            labelInstruction.TabIndex = 31;
-            labelInstruction.Text = "Drag and drop the pictures to their correct position:";
+            labelInstructions.AutoSize = true;
+            labelInstructions.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            labelInstructions.Location = new Point(12, 139);
+            labelInstructions.Name = "labelInstruction";
+            labelInstructions.Size = new Size(359, 18);
+            labelInstructions.TabIndex = 31;
+            labelInstructions.Text = "Drag and drop the pictures to their correct position:";
             // 
             // labelCorrectAnswers
             // 
@@ -472,7 +472,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1111, 618);
             Controls.Add(labelCorrectAnswers);
-            Controls.Add(labelInstruction);
+            Controls.Add(labelInstructions);
             Controls.Add(labelAttribution);
             Controls.Add(gameDescription);
             Controls.Add(buttonStartNewGame);
@@ -481,7 +481,7 @@
             Controls.Add(buttonTopScores);
             Controls.Add(buttonBackToGameSelection);
             Controls.Add(buttonSubmitAnswers);
-            Controls.Add(pictureBoxShowingImages);
+            Controls.Add(pictureBoxShowingPictures);
             Name = "PicturesInCorrectOrderForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Order, order!";
@@ -505,7 +505,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxAnswer7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxOption6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAnswer6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxShowingImages).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxShowingPictures).EndInit();
             panelOptions.ResumeLayout(false);
             panelAnswers.ResumeLayout(false);
             ResumeLayout(false);
@@ -538,12 +538,12 @@
         private Button buttonSubmitAnswers;
         private Button buttonBackToGameSelection;
         private Button buttonTopScores;
-        private PictureBox pictureBoxShowingImages;
+        private PictureBox pictureBoxShowingPictures;
         private Panel panelOptions;
         private Panel panelAnswers;
         private RichTextBox gameDescription;
         private Label labelAttribution;
-        private Label labelInstruction;
+        private Label labelInstructions;
         private Label labelCorrectAnswers;
     }
 }

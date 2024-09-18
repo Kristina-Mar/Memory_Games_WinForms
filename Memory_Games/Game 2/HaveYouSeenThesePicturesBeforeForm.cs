@@ -23,11 +23,11 @@ namespace Memory_Games
         public HaveYouSeenThesePicturesBeforeForm()
         {
             InitializeComponent();
-            panelAllCards.Visible = false;
+            panelOriginalSelectionOfPictures.Visible = false;
             pictureBoxPicturesToGuess.Visible = false;
             buttonYes.Visible = false;
             buttonNo.Visible = false;
-            labelInstruction.Visible = false;
+            labelInstructions.Visible = false;
             panelCountdown.Visible = false;
             labelCorrectOrIncorrect.Visible = false;
         }
@@ -40,14 +40,14 @@ namespace Memory_Games
         private async void StartNewGame(object sender, EventArgs e)
         {
             gameDescription.Visible = false;
-            labelInstruction.Visible = false;
+            labelInstructions.Visible = false;
             buttonStartNewGame.Location = new Point(162, 24);
 
-            foreach (PictureBox p in panelAllCards.Controls)
+            foreach (PictureBox p in panelOriginalSelectionOfPictures.Controls)
             {
                 p.BackgroundImage = null;
             }
-            panelAllCards.Visible = true;
+            panelOriginalSelectionOfPictures.Visible = true;
             pictureBoxPicturesToGuess.Visible = false;
             buttonYes.Visible = false;
             buttonNo.Visible = false;
@@ -57,9 +57,9 @@ namespace Memory_Games
             Game = new HaveYouSeenThesePicturesBefore();
             Game.SetUpGame();
 
-            for (int i = 0; i < Game.OriginalSelectionOfWords.Count(); i++)
+            for (int i = 0; i < Game.OriginalSelectionOfPictures.Count(); i++)
             {
-                panelAllCards.Controls[i].BackgroundImage = Resources.ResourceManager.GetObject(Game.OriginalSelectionOfWords[i]) as Bitmap;
+                panelOriginalSelectionOfPictures.Controls[i].BackgroundImage = Resources.ResourceManager.GetObject(Game.OriginalSelectionOfPictures[i]) as Bitmap;
             }
             _remainingTime = 30;
             labelRemainingTime.Text = $"{_remainingTime.ToString()} s";
@@ -69,39 +69,39 @@ namespace Memory_Games
 
             timer.Enabled = false;
             panelCountdown.Visible = false;
-            panelAllCards.Visible = false;
+            panelOriginalSelectionOfPictures.Visible = false;
             pictureBoxPicturesToGuess.Visible = true;
             buttonYes.Visible = true;
             buttonNo.Visible = true;
             buttonNo.Enabled = true;
             buttonYes.Enabled = true;
-            labelInstruction.Visible = true;
+            labelInstructions.Visible = true;
 
-            if (Resources.ResourceManager.GetObject(Game.ListOfWordsToShowToPlayer[_index]) is Bitmap)
+            if (Resources.ResourceManager.GetObject(Game.ListOfPicturesToShowToPlayer[_index]) is Bitmap)
             {
                 _gameStart = DateTime.Now;
-                pictureBoxPicturesToGuess.BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfWordsToShowToPlayer[_index]) as Bitmap;
+                pictureBoxPicturesToGuess.BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfPicturesToShowToPlayer[_index]) as Bitmap;
             }
         }
 
-        private void ShowIfPlayerGuessedCorrectly()
+        /*private void ShowIfPlayerGuessedCorrectly()
         {
             labelCorrectOrIncorrect.Visible = true;
             labelCorrectOrIncorrect.Text = "Correct!";
             labelCorrectOrIncorrect.ForeColor = Color.Green;
-        }
+        }*/
 
         private void SubmitAnswer(object sender, EventArgs e)
         {
             string playerAnswer = ((Button)sender).Text;
             if (playerAnswer == "Yes")
             {
-                Game.PlayerAnswers[_index] = Game.ListOfWordsToShowToPlayer[_index];
+                Game.PlayerAnswers[_index] = Game.ListOfPicturesToShowToPlayer[_index];
             }
             
-            if (_index < Game.ListOfWordsToShowToPlayer.Count() - 1)
+            if (_index < Game.ListOfPicturesToShowToPlayer.Count() - 1)
             {
-                pictureBoxPicturesToGuess.BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfWordsToShowToPlayer[_index + 1]) as Bitmap;
+                pictureBoxPicturesToGuess.BackgroundImage = Resources.ResourceManager.GetObject(Game.ListOfPicturesToShowToPlayer[_index + 1]) as Bitmap;
                 _index++;
             }
             else

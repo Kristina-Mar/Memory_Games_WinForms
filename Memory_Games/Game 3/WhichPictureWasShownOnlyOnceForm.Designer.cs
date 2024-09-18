@@ -48,11 +48,11 @@
             pictureBox15 = new PictureBox();
             panelOptions = new Panel();
             pictureBox16 = new PictureBox();
-            pictureBoxShowingImages = new PictureBox();
+            pictureBoxShowingPictures = new PictureBox();
             labelPictureNumber = new Label();
             gameDescription = new RichTextBox();
             labelAttribution = new Label();
-            labelInstruction = new Label();
+            labelInstructions = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -70,7 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             panelOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxShowingImages).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxShowingPictures).BeginInit();
             SuspendLayout();
             // 
             // buttonTopScores
@@ -307,13 +307,13 @@
             // 
             // pictureBoxShowingImages
             // 
-            pictureBoxShowingImages.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBoxShowingImages.BorderStyle = BorderStyle.FixedSingle;
-            pictureBoxShowingImages.Location = new Point(145, 208);
-            pictureBoxShowingImages.Name = "pictureBoxShowingImages";
-            pictureBoxShowingImages.Size = new Size(300, 300);
-            pictureBoxShowingImages.TabIndex = 51;
-            pictureBoxShowingImages.TabStop = false;
+            pictureBoxShowingPictures.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBoxShowingPictures.BorderStyle = BorderStyle.FixedSingle;
+            pictureBoxShowingPictures.Location = new Point(145, 208);
+            pictureBoxShowingPictures.Name = "pictureBoxShowingImages";
+            pictureBoxShowingPictures.Size = new Size(300, 300);
+            pictureBoxShowingPictures.TabIndex = 51;
+            pictureBoxShowingPictures.TabStop = false;
             // 
             // labelPictureNumber
             // 
@@ -349,23 +349,23 @@
             // 
             // labelInstruction
             // 
-            labelInstruction.AutoSize = true;
-            labelInstruction.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            labelInstruction.Location = new Point(136, 80);
-            labelInstruction.Name = "labelInstruction";
-            labelInstruction.Size = new Size(322, 18);
-            labelInstruction.TabIndex = 55;
-            labelInstruction.Text = "Click on the picture that was only shown once.";
+            labelInstructions.AutoSize = true;
+            labelInstructions.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            labelInstructions.Location = new Point(136, 80);
+            labelInstructions.Name = "labelInstruction";
+            labelInstructions.Size = new Size(322, 18);
+            labelInstructions.TabIndex = 55;
+            labelInstructions.Text = "Click on the picture that was only shown once.";
             // 
             // WhichPictureWasShownOnlyOnceForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(594, 692);
-            Controls.Add(labelInstruction);
+            Controls.Add(labelInstructions);
             Controls.Add(labelAttribution);
             Controls.Add(gameDescription);
-            Controls.Add(pictureBoxShowingImages);
+            Controls.Add(pictureBoxShowingPictures);
             Controls.Add(buttonStartNewGame);
             Controls.Add(labelPictureNumber);
             Controls.Add(panelOptions);
@@ -391,7 +391,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             panelOptions.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxShowingImages).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxShowingPictures).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -417,11 +417,11 @@
         private PictureBox pictureBox14;
         private PictureBox pictureBox15;
         private Panel panelOptions;
-        private PictureBox pictureBoxShowingImages;
+        private PictureBox pictureBoxShowingPictures;
         private PictureBox pictureBox16;
         private Label labelPictureNumber;
         private RichTextBox gameDescription;
         private Label labelAttribution;
-        private Label labelInstruction;
+        private Label labelInstructions;
     }
 }

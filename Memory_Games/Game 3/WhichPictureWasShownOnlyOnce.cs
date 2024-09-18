@@ -10,7 +10,7 @@ namespace Memory_Games
     public class WhichPictureWasShownOnlyOnce : BaseClassForAllGames
     {
         public override string GameName { get; } = "Game 3";
-        public override string[] ListOfWordsToShowToPlayer { get; protected set; } = new string[31];
+        public override string[] ListOfPicturesToShowToPlayer { get; protected set; } = new string[31];
         public override string[] GameSolution { get; protected set; } = new string[1];
         public override string[] PlayerAnswers { get; protected set; } = new string[1];
         public override double PlayerTime { get; set; } = 0;
@@ -20,34 +20,34 @@ namespace Memory_Games
         {
             PlayerTime = 0;
             PlayerCorrectAnswers = 0;
-            string newWord;
+            string newPicture;
 
-            for (int i = 0; i < (ListOfWordsToShowToPlayer.Length - 1); i += 2)
+            for (int i = 0; i < (ListOfPicturesToShowToPlayer.Length - 1); i += 2)
             {
-                newWord = PickAWordFromListOfAllWords();
-                while (ListOfWordsToShowToPlayer.Contains(newWord))
+                newPicture = PickNewPicture();
+                while (ListOfPicturesToShowToPlayer.Contains(newPicture))
                 {
-                    newWord = PickAWordFromListOfAllWords();
+                    newPicture = PickNewPicture();
                 }
-                ListOfWordsToShowToPlayer[i] = newWord;
-                ListOfWordsToShowToPlayer[i + 1] = newWord;
+                ListOfPicturesToShowToPlayer[i] = newPicture;
+                ListOfPicturesToShowToPlayer[i + 1] = newPicture;
             }
 
-            newWord = PickAWordFromListOfAllWords();
-            while (ListOfWordsToShowToPlayer.Contains(newWord))
+            newPicture = PickNewPicture();
+            while (ListOfPicturesToShowToPlayer.Contains(newPicture))
             {
-                newWord = PickAWordFromListOfAllWords();
+                newPicture = PickNewPicture();
             }
-            ListOfWordsToShowToPlayer[^1] = newWord;
-            GameSolution[0] = newWord;
+            ListOfPicturesToShowToPlayer[^1] = newPicture;
+            GameSolution[0] = newPicture;
 
             Random randomOrderGenerator = new Random();
-            for (int j = ListOfWordsToShowToPlayer.Length - 1; j >= 0; j--)
+            for (int j = ListOfPicturesToShowToPlayer.Length - 1; j >= 0; j--)
             {
-                string originalWord = ListOfWordsToShowToPlayer[j];
+                string originalPicture = ListOfPicturesToShowToPlayer[j];
                 int newIndex = randomOrderGenerator.Next(j + 1);
-                ListOfWordsToShowToPlayer[j] = ListOfWordsToShowToPlayer[newIndex];
-                ListOfWordsToShowToPlayer[newIndex] = originalWord;
+                ListOfPicturesToShowToPlayer[j] = ListOfPicturesToShowToPlayer[newIndex];
+                ListOfPicturesToShowToPlayer[newIndex] = originalPicture;
             }
         }
 

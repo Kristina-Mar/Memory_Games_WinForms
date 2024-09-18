@@ -10,7 +10,7 @@ namespace Memory_Games
     public class PicturesInCorrectOrder : BaseClassForAllGames
     {
         public override string GameName { get; } = "Game 1";
-        public override string[] ListOfWordsToShowToPlayer { get; protected set; } = new string[10];
+        public override string[] ListOfPicturesToShowToPlayer { get; protected set; } = new string[10];
         public override string[] GameSolution { get; protected set; } = new string[10];
         public override string[] PlayerAnswers { get; protected set; } = new string[10];
         public override int PlayerCorrectAnswers { get; protected set; } = 0;
@@ -21,16 +21,16 @@ namespace Memory_Games
         {
             PlayerCorrectAnswers = 0;
             PlayerTime = 0;
-            for (int i = 0; i < ListOfWordsToShowToPlayer.Length; i++)
+            for (int i = 0; i < ListOfPicturesToShowToPlayer.Length; i++)
             {
-                string newWord = PickAWordFromListOfAllWords();
-                while (ListOfWordsToShowToPlayer.Contains(newWord))
+                string newPicture = PickNewPicture();
+                while (ListOfPicturesToShowToPlayer.Contains(newPicture))
                 {
-                    newWord = PickAWordFromListOfAllWords();
+                    newPicture = PickNewPicture();
                 }
-                ListOfWordsToShowToPlayer[i] = newWord;
+                ListOfPicturesToShowToPlayer[i] = newPicture;
             }
-            GameSolution = ListOfWordsToShowToPlayer;
+            GameSolution = ListOfPicturesToShowToPlayer;
         }
 
         public override void CheckPlayerAnswers()
