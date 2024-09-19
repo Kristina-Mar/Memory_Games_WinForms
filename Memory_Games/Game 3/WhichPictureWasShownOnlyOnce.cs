@@ -51,25 +51,21 @@ namespace Memory_Games
             }
         }
 
-        public override void CheckPlayerAnswers()
+        public bool CheckPlayerAnswer(string guessedPicture)
         {
-            if (PlayerAnswers[0] == GameSolution[0])
-            {
-                PlayerCorrectAnswers = 1;
-            }
+            PlayerCorrectAnswers++;
+            PlayerAnswers[0] = guessedPicture;
+            return PlayerAnswers[0] == GameSolution[0];
+        }
+        
+        public override void CheckPlayerPoints()
+        {
             PlayerScore = new PlayerScores(GameName, PlayerCorrectAnswers, PlayerTime);
         }
 
         public override string ShowPlayerScore()
         {
-            if (PlayerCorrectAnswers == 1)
-            {
-                return $"You're right, congratulations! Your time: {TimeFormatting.FormatTime(PlayerTime)}.";
-            }
-            else
-            {
-                return $"Incorrect :( Better luck next time!";
-            }
+            return $"Number of guesses: {PlayerCorrectAnswers}, time: {TimeFormatting.FormatTime(PlayerTime)}.";
         }
     }
 }

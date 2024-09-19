@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,6 +37,8 @@ namespace Memory_Games
             foreach (PictureBox p in panelOptions.Controls)
             {
                 p.BackgroundImage = null;
+                p.Image = null;
+                p.Enabled = true;
             }
             panelOptions.Visible = false;
             pictureBoxShowingPictures.Visible = true;
@@ -76,10 +79,18 @@ namespace Memory_Games
 
         private void SubmitAnswerByClickingOnPicture(object sender, EventArgs e)
         {
+            ResourceManager rm = new ResourceManager("Memory_Games.Properties.CrossAndTick", typeof(Resources).Assembly);
+            string guessedPicture = ((PictureBox)sender).Tag.ToString();
+            if (!Game.CheckPlayerAnswer(guessedPicture))
+            {
+                ((PictureBox)sender).Image = rm.GetObject("incorrect") as Bitmap;
+                ((PictureBox)sender).Enabled = false;
+                return;
+            }
             Game.PlayerTime = (DateTime.Now - _gameStart).TotalSeconds;
+            ((PictureBox)sender).Image = rm.GetObject("correct") as Bitmap;
             panelOptions.Enabled = false;
-            Game.PlayerAnswers[0] = ((PictureBox)sender).Tag.ToString();
-            Game.CheckPlayerAnswers();
+            Game.CheckPlayerPoints();
             MessageBox.Show(Game.ShowPlayerScore());
             if (Game.PlayerCorrectAnswers > 0 && Game.DidPlayerMakeItToTopScores())
             {

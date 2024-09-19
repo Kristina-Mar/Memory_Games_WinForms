@@ -48,7 +48,7 @@ namespace Memory_Games
             }
         }
 
-        public override void CheckPlayerAnswers()
+        public override void CheckPlayerPoints()
         {
             for (int i = 0; i < PlayerAnswers.Length; i++)
             {

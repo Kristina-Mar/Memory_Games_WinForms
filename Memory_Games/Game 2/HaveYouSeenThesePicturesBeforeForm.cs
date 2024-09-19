@@ -103,7 +103,7 @@ namespace Memory_Games
                 Game.PlayerTime = (DateTime.Now - _gameStart).TotalSeconds;
                 buttonNo.Enabled = false;
                 buttonYes.Enabled = false;
-                Game.CheckPlayerAnswers();
+                Game.CheckPlayerPoints();
                 MessageBox.Show(Game.ShowPlayerScore());
                 if (Game.PlayerCorrectAnswers > 0 && Game.DidPlayerMakeItToTopScores())
                 {

@@ -141,7 +141,7 @@ namespace Memory_Games
                     Game.PlayerAnswers[i] = "";
                 }
             }
-            Game.CheckPlayerAnswers();
+            Game.CheckPlayerPoints();
             labelCorrectAnswers.Visible = true;
             for (int i = 0; i < 10; i++)
             {

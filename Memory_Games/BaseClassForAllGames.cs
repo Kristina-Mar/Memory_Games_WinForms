@@ -29,7 +29,7 @@ namespace Memory_Games
         }
 
         public abstract void SetUpGame();
-        public abstract void CheckPlayerAnswers();
+        public abstract void CheckPlayerPoints();
         public abstract string ShowPlayerScore();
         public virtual bool DidPlayerMakeItToTopScores()
         {

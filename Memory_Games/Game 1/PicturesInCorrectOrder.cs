@@ -33,7 +33,7 @@ namespace Memory_Games
             GameSolution = ListOfPicturesToShowToPlayer;
         }
 
-        public override void CheckPlayerAnswers()
+        public override void CheckPlayerPoints()
         {
             for (int i = 0; i < PlayerAnswers.Length; i++)
             {

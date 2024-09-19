@@ -22,13 +22,13 @@ namespace Memory_Games
             {
                 panel.Visible = false;
             }
-            if (PlayerScores.ReturnOrderedBestScoresForThisGame(gameName).Count() != 0)
+            if (PlayerScores.ReturnTopScores(gameName).Count() != 0)
             {
-                var orderedScores = PlayerScores.ReturnOrderedBestScoresForThisGame(gameName).OrderByDescending(p => p.CorrectAnswers).ThenBy(p => p.Time);
+                var orderedScores = PlayerScores.ReturnTopScores(gameName);
                 for (int i = 0; i < orderedScores.Count(); i++)
                 {
                     (_scorePanels[i].Controls[0] as Label).Text = orderedScores.ElementAt(i).PlayerName;
-                    (_scorePanels[i].Controls[1] as Label).Text = orderedScores.ElementAt(i).CorrectAnswers.ToString();
+                    (_scorePanels[i].Controls[1] as Label).Text = orderedScores.ElementAt(i).Points.ToString();
                     (_scorePanels[i].Controls[2] as Label).Text = TimeFormatting.FormatTime(orderedScores.ElementAt(i).Time);
                     _scorePanels[i].Visible = true;
                 }

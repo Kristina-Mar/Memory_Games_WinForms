@@ -113,6 +113,7 @@
             pictureBox1.Location = new Point(10, 10);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(110, 110);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 36;
             pictureBox1.TabStop = false;
             pictureBox1.Click += SubmitAnswerByClickingOnPicture;
@@ -124,6 +125,7 @@
             pictureBox2.Location = new Point(145, 10);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(110, 110);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 37;
             pictureBox2.TabStop = false;
             pictureBox2.Click += SubmitAnswerByClickingOnPicture;
@@ -135,6 +137,7 @@
             pictureBox3.Location = new Point(280, 10);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(110, 110);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 38;
             pictureBox3.TabStop = false;
             pictureBox3.Click += SubmitAnswerByClickingOnPicture;
@@ -146,6 +149,7 @@
             pictureBox4.Location = new Point(415, 10);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(110, 110);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 39;
             pictureBox4.TabStop = false;
             pictureBox4.Click += SubmitAnswerByClickingOnPicture;
@@ -157,6 +161,7 @@
             pictureBox5.Location = new Point(10, 145);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(110, 110);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 40;
             pictureBox5.TabStop = false;
             pictureBox5.Click += SubmitAnswerByClickingOnPicture;
@@ -168,6 +173,7 @@
             pictureBox6.Location = new Point(145, 145);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(110, 110);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 41;
             pictureBox6.TabStop = false;
             pictureBox6.Click += SubmitAnswerByClickingOnPicture;
@@ -179,6 +185,7 @@
             pictureBox7.Location = new Point(280, 145);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(110, 110);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 42;
             pictureBox7.TabStop = false;
             pictureBox7.Click += SubmitAnswerByClickingOnPicture;
@@ -190,6 +197,7 @@
             pictureBox8.Location = new Point(415, 145);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(110, 110);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 43;
             pictureBox8.TabStop = false;
             pictureBox8.Click += SubmitAnswerByClickingOnPicture;
@@ -201,6 +209,7 @@
             pictureBox9.Location = new Point(10, 280);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(110, 110);
+            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox9.TabIndex = 44;
             pictureBox9.TabStop = false;
             pictureBox9.Click += SubmitAnswerByClickingOnPicture;
@@ -212,6 +221,7 @@
             pictureBox10.Location = new Point(145, 280);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(110, 110);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox10.TabIndex = 45;
             pictureBox10.TabStop = false;
             pictureBox10.Click += SubmitAnswerByClickingOnPicture;
@@ -223,6 +233,7 @@
             pictureBox11.Location = new Point(280, 280);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(110, 110);
+            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox11.TabIndex = 46;
             pictureBox11.TabStop = false;
             pictureBox11.Click += SubmitAnswerByClickingOnPicture;
@@ -234,6 +245,7 @@
             pictureBox12.Location = new Point(415, 280);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(110, 110);
+            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox12.TabIndex = 47;
             pictureBox12.TabStop = false;
             pictureBox12.Click += SubmitAnswerByClickingOnPicture;
@@ -245,6 +257,7 @@
             pictureBox13.Location = new Point(10, 415);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(110, 110);
+            pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox13.TabIndex = 48;
             pictureBox13.TabStop = false;
             pictureBox13.Click += SubmitAnswerByClickingOnPicture;
@@ -256,6 +269,7 @@
             pictureBox14.Location = new Point(145, 415);
             pictureBox14.Name = "pictureBox14";
             pictureBox14.Size = new Size(110, 110);
+            pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox14.TabIndex = 49;
             pictureBox14.TabStop = false;
             pictureBox14.Click += SubmitAnswerByClickingOnPicture;
@@ -267,6 +281,7 @@
             pictureBox15.Location = new Point(280, 415);
             pictureBox15.Name = "pictureBox15";
             pictureBox15.Size = new Size(110, 110);
+            pictureBox15.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox15.TabIndex = 50;
             pictureBox15.TabStop = false;
             pictureBox15.Click += SubmitAnswerByClickingOnPicture;
@@ -301,16 +316,17 @@
             pictureBox16.Location = new Point(415, 415);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(110, 110);
+            pictureBox16.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox16.TabIndex = 51;
             pictureBox16.TabStop = false;
             pictureBox16.Click += SubmitAnswerByClickingOnPicture;
             // 
-            // pictureBoxShowingImages
+            // pictureBoxShowingPictures
             // 
             pictureBoxShowingPictures.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBoxShowingPictures.BorderStyle = BorderStyle.FixedSingle;
             pictureBoxShowingPictures.Location = new Point(145, 208);
-            pictureBoxShowingPictures.Name = "pictureBoxShowingImages";
+            pictureBoxShowingPictures.Name = "pictureBoxShowingPictures";
             pictureBoxShowingPictures.Size = new Size(300, 300);
             pictureBoxShowingPictures.TabIndex = 51;
             pictureBoxShowingPictures.TabStop = false;
@@ -347,12 +363,12 @@
             labelAttribution.TabIndex = 54;
             labelAttribution.Text = "Images by flatart on Freepik.";
             // 
-            // labelInstruction
+            // labelInstructions
             // 
             labelInstructions.AutoSize = true;
             labelInstructions.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
             labelInstructions.Location = new Point(136, 80);
-            labelInstructions.Name = "labelInstruction";
+            labelInstructions.Name = "labelInstructions";
             labelInstructions.Size = new Size(322, 18);
             labelInstructions.TabIndex = 55;
             labelInstructions.Text = "Click on the picture that was only shown once.";

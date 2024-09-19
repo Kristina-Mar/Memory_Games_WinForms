@@ -14,7 +14,7 @@ namespace Memory_Games.Scores
         [DataMember]
         public string GameName { get; private set; }
         [DataMember]
-        public int CorrectAnswers { get; private set; }
+        public int Points { get; private set; }
         [DataMember]
         public double Time { get; private set; }
         [DataMember]
@@ -32,38 +32,48 @@ namespace Memory_Games.Scores
         public PlayerScores(string gameName, int correctAnswers, double time)
         {
             GameName = gameName;
-            CorrectAnswers = correctAnswers;
+            Points = correctAnswers;
             Time = time;
         }
 
         public bool IsScoreAmongTopScores()
         {
-            TopScores = ReturnOrderedBestScoresForThisGame(GameName).ToList();
+            TopScores = ReturnTopScores(GameName).ToList();
             if (TopScores.Count < 5)
             {
                 return true;
             }
-            else if (CorrectAnswers > TopScores.Last().CorrectAnswers
-                || (CorrectAnswers == TopScores.Last().CorrectAnswers && Time < TopScores.Last().Time))
+            if (IsHighestScoreTheBest(GameName))
+            {
+                if (Points > TopScores.Last().Points
+                    || (Points == TopScores.Last().Points && Time < TopScores.Last().Time))
+                {
+                    RemoveLowestScore(GameName);
+                    return true;
+                }
+            }
+            else if (Points < TopScores.Last().Points
+            || (Points == TopScores.Last().Points && Time < TopScores.Last().Time))
             {
                 RemoveLowestScore(GameName);
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
-        public static List<PlayerScores> ReturnOrderedBestScoresForThisGame(string gameName)
+        public static List<PlayerScores> ReturnTopScores(string gameName)
         {
             TopScores = LoadBestScoresFromFile(gameName);
             if (TopScores.Count == 0)
             {
             }
+            else if (IsHighestScoreTheBest(gameName))
+            {
+                TopScores = TopScores.OrderByDescending(p => p.Points).ThenBy(p => p.Time).ToList();
+            }
             else
             {
-                TopScores = TopScores.OrderByDescending(p => p.CorrectAnswers).ThenBy(p => p.Time).ToList();
+                TopScores = TopScores.OrderBy(p => p.Points).ThenBy(p => p.Time).ToList();
             }
             return TopScores;
         }
@@ -77,8 +87,28 @@ namespace Memory_Games.Scores
         private static void RemoveLowestScore(string gameName)
         // Only top 5 scores are saved.
         {
-            TopScores = TopScores.OrderByDescending(p => p.CorrectAnswers).ThenBy(p => p.Time).ToList();
+            if (IsHighestScoreTheBest(gameName))
+            {
+                TopScores = TopScores.OrderByDescending(p => p.Points).ThenBy(p => p.Time).ToList();
+            }
+            else
+            {
+                TopScores = TopScores.OrderBy(p => p.Points).ThenBy(p => p.Time).ToList();
+            }
             TopScores.RemoveAt(TopScores.Count - 1);
+        }
+
+        private static bool IsHighestScoreTheBest(string gameName)
+        {
+            // In Game 3 the lowest number of guesses is the best.
+            if (gameName == "Game 3")
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         private static void SetValidTopScoreFilePath(string gameName)
